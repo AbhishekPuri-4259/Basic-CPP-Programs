@@ -8,7 +8,7 @@ int main()
 	//:: --> scope resolution operator
 	std::cout<<"Hello World"<<std::endl;
 	std::cout<<"Value :"<<num<<std::endl;
-	std::cout<<"Enter Value ::";
+	std::cout<<"Enter Value :";
 	
 	//>> --> extraction operator
 	std::cin>>num;
