@@ -14,11 +14,26 @@ class car
 	float car_mileage;
 	
 	//Member functions
+	void start()
+	{
+		cout<<"Start the Engine"<<endl;
+	}
+
+	void stop()
+	{
+		cout<<"Stop the Engine"<<endl;
+		cout<<"************************";
+	}
+
+	void accelerate()
+	{
+		cout<<"Accelerate"<<endl;
+	}
+
 	void display()
 	{
 		cout<<endl<<"************************";
 		cout<<endl<<"Brand: "<<car_brand<<endl<<"Type: "<<car_type<<endl<<"Color: "<<car_color<<endl<<"Mileage: "<<car_mileage<<"kmpl"<<endl;
-		cout<<"************************";
 	}
 };
 
@@ -27,7 +42,7 @@ int main()
 	car xuv7OO, i20, slavia;
 	int opt;
 
-	cout<<"Display the details of"<<endl;
+	cout<<"Pick your car"<<endl;
 	cout<<"1.XUV7OO"<<endl<<"2.i20"<<endl<<"3.Slavia"<<endl<<endl;
 
 	cin>>opt;
@@ -40,6 +55,9 @@ int main()
 			 xuv7OO.car_mileage = 16.57;
 
 			 xuv7OO.display();
+			 xuv7OO.start();
+			 xuv7OO.accelerate();
+			 xuv7OO.stop();
 			 break;
 
                 case 2 : i20.car_brand = "Hyundai";
@@ -48,6 +66,9 @@ int main()
                          i20.car_mileage = 19.50;
 
                          i20.display();
+			 i20.start();
+                         i20.accelerate();
+                         i20.stop();
                          break;
 
                 case 3 : slavia.car_brand = "Skoda";
@@ -56,6 +77,9 @@ int main()
                          slavia.car_mileage = 18.73;
 
                          slavia.display();
+			 slavia.start();
+                         slavia.accelerate();
+                         slavia.stop();
                          break;
 
 
