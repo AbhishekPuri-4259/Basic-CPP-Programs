@@ -8,7 +8,7 @@ int main()
 	
 	//<< --> insertion operator
 	//:: --> scope resolution operator
-	cout<<"Hello World"<<endl;
+	cout<<"Hello SCHAEFFLER"<<endl;
 	cout<<"Value :"<<num<<endl;
 	cout<<"Enter Value :";
 	
