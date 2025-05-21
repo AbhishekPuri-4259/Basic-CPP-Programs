@@ -3,11 +3,12 @@ using namespace std;
 
 class Rectangle
 {
-	public:
+	protected:
 	int area;
 	int volume;
 	int areavolume;
 
+	public:
 	void R_area(int l, int b)
 	{
 		area = l * b;
