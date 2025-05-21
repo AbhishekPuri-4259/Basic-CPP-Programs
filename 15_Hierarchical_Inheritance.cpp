@@ -4,12 +4,22 @@ using namespace std;
 class shape
 {
 	public:
-	int length, breadth, height, radius;
 	float area;
 
-	void print_area()
+	void print_area(int opt)
         {
-                cout << " Area: " << area << endl;
+		if (opt == 1)
+		{
+                	cout << "Area of Rectangle: " << area << endl;
+		}
+		else if (opt == 2)
+		{
+                	cout << "Area of Circle: " << area << endl;
+		}
+		else if (opt == 3)
+		{
+                	cout << "Area of Triangle: " << area << endl;
+		}
         }
 
 };
@@ -45,18 +55,15 @@ int main()
 {
 	Rectangle R1;
 	R1.R_area(5, 4);
-	cout << "Rectangle";
-	R1.print_area();
+	R1.print_area(1);
 
 	Circle C1;
 	C1.C_area(5);
-	cout << "Circle";
-        C1.print_area();
+        C1.print_area(2);
 
 	Triangle T1;
         T1.T_area(5, 4);
-        cout << "Circle";
-        T1.print_area();
+        T1.print_area(3);
 
 	return 0;
 }
