@@ -4,29 +4,34 @@ using namespace std;
 class Rectangle
 {
 	public:
-	int length;
-	int breadth;
-	float area;
+	int area;
+	int volume;
+	int areavolume;
 
 	void R_area(int l, int b)
 	{
 		area = l * b;
 	}
 
-	void print_area()
+	void display(int opt)
 	{
-		cout << " Area: " << area << endl;
+		if (opt == 1)
+		{	
+			cout << " Area of Rectangle: " << area << endl;
+		}
+		else if (opt == 2)
+		{
+			cout << " Volume of Cuboid: " << volume << endl;
+		}
 	}
 };
 
 class Cuboid : public Rectangle
 {
 	public:
-	int height;
-
-	void C_area(int l, int b, int h)
+	void C_volume(int l, int b, int h)
         {
-                area = l * b * h;
+		volume = l * b * h;
         }
 };
 
@@ -34,11 +39,9 @@ int main()
 {
 	Rectangle R1;
 	R1.R_area(5, 4);
-	cout << "Rectangle";
-	R1.print_area();
+	R1.display(1);
 
 	Cuboid C1;
-	C1.C_area(5, 4, 3);
-	cout << "Cuboid";
-        C1.print_area();
+	C1.C_volume(5, 4, 3);
+        C1.display(2);
 }
