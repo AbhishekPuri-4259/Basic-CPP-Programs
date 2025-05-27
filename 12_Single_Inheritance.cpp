@@ -6,7 +6,6 @@ class Rectangle
 	protected:
 	int area;
 	int volume;
-	int areavolume;
 
 	public:
 	void R_area(int l, int b)
