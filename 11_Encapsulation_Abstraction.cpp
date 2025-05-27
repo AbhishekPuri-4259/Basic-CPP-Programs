@@ -53,7 +53,7 @@ int main()
 
         switch(opt)
         {
-                case 1 : xuv7OO.display("Mahindra", "SUV", "Blue",16.57);
+                case 1 : xuv7OO.display("Mahindra", "SUV", "Blue", 16.57);
                          xuv7OO.start();
                          xuv7OO.accelerate();
                          xuv7OO.stop();
