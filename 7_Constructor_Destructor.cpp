@@ -11,7 +11,7 @@ class Employee
 
         Employee()
         {
-                id = 0;
+                id = 555;
                 name = new char[10];
 
                 cout << "Constructor called" << endl << endl;
