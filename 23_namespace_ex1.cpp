@@ -5,7 +5,7 @@ int main()
 {
 	int x = 10;
 	cout << x << endl;
-	double x = 15.5; // Not allowed to have the same name in a local space!
+	double x = 15.5;
 	cout << x << endl;
 	return 0;
 }
