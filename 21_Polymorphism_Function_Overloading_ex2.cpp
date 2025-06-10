@@ -4,15 +4,15 @@ using namespace std;
 class Payment
 {
 	public:
-	int payment_gateway(string parameter1)
+	void payment_gateway(string parameter1)
 	{
 		cout << "Payment through UPI is Success" << endl;
 	}
-	int payment_gateway(string parameter1, string parameter2)
+	void payment_gateway(string parameter1, string parameter2)
         {
                 cout << "Payment through Debit Card is Success" << endl;
         }
-	int payment_gateway(string parameter1, string parameter2, string parameter3)
+	void payment_gateway(string parameter1, string parameter2, string parameter3)
         {
                 cout << "Payment through Credit Card is Success" << endl;
         }
