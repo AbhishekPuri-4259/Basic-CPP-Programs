@@ -20,10 +20,10 @@ class Payment
 
 int main()
 {
-	Payment P1, P2, P3;
+	Payment P1;
 	P1.payment_gateway("upi");
-	P2.payment_gateway("nil", "debit");
-	P3.payment_gateway("nil", "nil", "credit");
+	P1.payment_gateway("nil", "debit");
+	P1.payment_gateway("nil", "nil", "credit");
 
 	return 0;
 }
