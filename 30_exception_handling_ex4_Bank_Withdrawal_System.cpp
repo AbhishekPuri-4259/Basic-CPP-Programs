@@ -43,7 +43,7 @@ int main()
     Harish.withdraw(6000); // Exceeds balance
 
     cout << "************************************************************" << endl;
-    cout << "Bro, it's the end of the month. Try again!" << endl;
+    cout << "Bro, it's month end. Try again!" << endl;
     cout << "************************************************************" << endl;
 
     cout << "Attempting to withdraw 3000..." << endl;
