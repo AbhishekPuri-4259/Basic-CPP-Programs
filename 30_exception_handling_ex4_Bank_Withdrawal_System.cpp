@@ -42,9 +42,9 @@ int main()
     cout << "Attempting to withdraw 6000..." << endl;
     Harish.withdraw(6000); // Exceeds balance
 
-    cout << "************************************************************" << endl;
+    cout << endl << endl;
     cout << "Bro, it's month end. Try again!" << endl;
-    cout << "************************************************************" << endl;
+    cout << endl << endl;
 
     cout << "Attempting to withdraw 3000..." << endl;
     Harish.withdraw(3000); // Valid withdrawal
