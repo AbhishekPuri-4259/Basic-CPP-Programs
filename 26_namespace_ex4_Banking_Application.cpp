@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 namespace SavingsAccount 
 {
     double calculateInterest(double principal, double rate, int time) 
@@ -24,10 +26,10 @@ int main()
     int time = 2;
 
     // Using SavingsAccount namespace
-    std::cout << "Savings Account Interest: ₹" << SavingsAccount::calculateInterest(principal, rate, time) << std::endl;
+    cout << "Savings Account Interest: ₹" << SavingsAccount::calculateInterest(principal, rate, time) << endl;
 
     // Using LoanAccount namespace
-    std::cout << "Loan Account Interest: ₹" << LoanAccount::calculateInterest(principal, rate, time) << std::endl;
+    cout << "Loan Account Interest: ₹" << LoanAccount::calculateInterest(principal, rate, time) << endl;
 
     return 0;
 }
